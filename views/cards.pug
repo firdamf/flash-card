@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    content
+        h4= text
+        //- h4= variabel
+        if hint
+            i Hint: #{hint}
+            br
+        a(href=`/cards/${id}?side=${sidenya}`)  #{SideToDisplay}
+        br
+        a(href = `/cards`) Soal Baru
+        br
+        a(href = `/goodbye`) Dadaah
+        //- else
+        //-     p Ga ada petunjuk
+
+
+
+
+
+        //- ul 
+        //-     each color in colors
+        //-         li=color 
+
+
+        //- table
+        //-     thead
+        //-         tr 
+        //-             td nama
+        //-             td umur
+        //-     tbody
+        //-         tr
+        //-             td firda
+        //-             td 20    
+        //-         tr
+        //-             td meilani
+        //-             td 21   
+//- habis h4 langsung samdengan jgn spasi
